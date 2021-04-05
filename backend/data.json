@@ -1,0 +1,109 @@
+{
+	"products": [
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.330 DORADO",
+			"utilization": "szemes",
+			"fao": "330",
+			"maturitygroup": "korai",
+			"technology": "HYDRANEO",
+			"features": ["középérésű", "kiváló szemminőség", "nagy hektoliter tömeg", "nagyon jó szárazságtűrés", "nagyon jó évjárat és termőhely stabilitás", "kiváló cső- és száregészség"],
+			"benefits": ["nagy termőképességű hibridet keresnek a korai éréscsoport elejéről, amely szárazságban is stabil", "alapvetően korán szeretnek betakarítani, de ha hosszabb ideig kint marad a kukorica, az sem okoz terméscsökkenést, illetve minőségromlást"]
+		},
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.390 PHALANX",
+			"utilization": "szemes",
+			"fao": "390",
+			"maturitygroup": "közép-korai",
+			"technology": "HYDRANEO",
+			"features": ["nagy termőképesség", "nagyon jó szárazságtűrés", "nagyon jó kezdeti fejlődés", "gyors vízleadás"],
+			"benefits": ["a szárazság hatásának csökkentését a jó agrotechnikai gyakorlat és a hibrid választás kombinációjával oldják meg", "olyan hibridet keresnek, amely meghálálja a kedvező termőhelyi adottságokat", "ugyanakkor jól képes kompenzálni, ha a körülmények kedvezőtlenebbre fordulnak"]
+		},
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.415 Invador",
+			"utilization": "szemes",
+			"fao": "415",
+			"maturitygroup": "közép-korai",
+			"technology": "HYDRANEO",
+			"features": ["kiváló termőképesség", "jó szárazságtűrés", "nagyon jó kezdeti fejlődés", "nagyon jó cső- és száregészség", "gyors vízleadás"],
+			"benefits": ["jó, vagy átlagos termőhelyi adottságok között gazdálkodik és a nagy termés elérése mellett a termésbiztonság is fontos számára", "területein az elérhető termésszintet kis vagy közepes mértékben befolyásolja az évjárat", "a vetés korai kezdéséhez keres arra alkalmas, közép-korai érésű hibridet"]
+		},
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.455 (Lineade)",
+			"utilization": "szemes",
+			"fao": "455",
+			"maturitygroup": "középérésű",
+			"technology": "HYDRANEO",
+			"features": ["kiemelkedő termőképesség", "jó szárazságtűrés", "jó termőhely stabilitás", "kiváló cső- és száregészség"],
+			"benefits": ["a jó termőhelyi adottságú területeik terméspotenciáljának maximális kihasználására törekszenek", "biztosítják a hibrid termésképzéséhez szükséges agronómiai feltételeket és ezért kiemelkedő termést várnak el"]
+		},
+
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.377",
+			"utilization": "szemes",
+			"fao": "380",
+			"maturitygroup": "korai",
+			"technology": "HYDRANEO",
+			"features": ["nagyon jó termőképesség", "jó termésstabilitás", "jó szárazságtűrés", "egészséges, szilárd szár"],
+			"benefits": ["Azoknak ajánljuk, akik jó, vagy átlagos termőhelyi adottságok között gazdálkodnak és az elérhető termésszintet kis vagy közepes mértékben befolyásolja az évjárat", "Azoknak is jó választás, akik a szárítási költségek csökkentése érdekében alacsony szemnedvességgel végzik a betakarítást, ezért egészséges, erős szárú hibridre van szükségük."]
+		},
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.388",
+			"utilization": "szemes",
+			"fao": "390",
+			"maturitygroup": "korai",
+			"technology": "",
+			"features": ["kiváló termésstabilitás", "kiváló szárazságtűrés", "nagyon jó csőegészség", "nagy hektoliter tömeg"],
+			"benefits": ["ha átlagos vagy gyengébb termőhelyi adottságok mellett is jó termést akar elérni", "gyakran előfordul szárazság, ezért a termésbiztonság évjárattól függetlenül az egyik legfontosabb szempont", "ha szeretné kihasználni a korai vetés előnyét is"]
+		},
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 30.369 (Limanova)",
+			"utilization": "szemes",
+			"fao": "370",
+			"maturitygroup": "közép-korai",
+			"technology": "",
+			"features": ["nagyon jó termőképesség", "kiváló termőhely és évjárat stabilitás", "középmagas szár"],
+			"benefits": ["Az elmúlt években a jó földeken sorban átlag felett termett.", "Kedvezőtlen körülmények között sem hagyta cserben a termelőjét."]
+		},
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "",
+			"utilization": "szemes",
+			"fao": "",
+			"maturitygroup": "",
+			"technology": "",
+			"features": ["", ""],
+			"benefits": ["", ""]
+		},
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "",
+			"utilization": "szemes",
+			"fao": "",
+			"maturitygroup": "",
+			"technology": "",
+			"features": ["", ""],
+			"benefits": ["", ""]
+		}
+
+
+
+
+
+	]
+}
