@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import LoadingMask from './LoadingMask';
 import Product from './Product';
-import Utilization from './Utilization';
-import MaturityGroup from './MaturityGroup';
+import FilterUtilization from './FilterUtilization';
+import FilterMaturityGroup from './FilterMaturityGroup';
+import FilterTechnology from './FilterTechnology';
 import {v4 as uuidv4} from 'uuid';
 
 
@@ -11,10 +12,10 @@ const ProductList = () => {
 	const [products, setProducts] = useState([]);
 	const [isLoaded, setIsLoaded] = useState(false)
 
-	const [maturityGroup, setMaturityGroup] = useState('all');
-	const [technology, setTechnology] = useState('all');
 	const [crop, setCrop] = useState('all');
 	const [utilization, setUtilization] = useState('all');
+	const [maturityGroup, setMaturityGroup] = useState('all');
+	const [technology, setTechnology] = useState('all');
 
 	useEffect(() => {
 
@@ -27,7 +28,7 @@ const ProductList = () => {
 
 	}, []);
 
-	//maturity group
+	//filtering conditions:
 
 	const selectByCrop = (product) => {
 		return product.crop === crop || crop === "all" ? true : false;
@@ -47,7 +48,8 @@ const ProductList = () => {
 	}
 
 
-	//filters
+	//filters:
+
 	const filteredProducts = products
 	.filter((product) => selectByCrop(product))
 	.filter((product) => selectByUtilization(product))
@@ -72,19 +74,12 @@ const ProductList = () => {
 					</select>
 				</div>				
 					
-				<Utilization crop={crop} setUtilization={setUtilization}/>
+				<FilterUtilization crop={crop} setUtilization={setUtilization}/>
 
-				<MaturityGroup crop={crop} setMaturityGroup={setMaturityGroup} />
+				<FilterMaturityGroup crop={crop} setMaturityGroup={setMaturityGroup} />
 
-				<div className="technology-container">
-					<label>Technológia</label>
-					<select  onChange={(e) => {setTechnology(e.target.value)}}>
-						<option value="all">Összes</option>
-						<option value="HYDRANEO">HYDRANEO</option>
-						<option value="agrility.DENSITY">agrility.DENSITY</option>
-						<option value="starcover">starcover</option>
-					</select>
-				</div>
+				<FilterTechnology crop={crop} setTechnology={setTechnology}/>
+
 
 			</div>
 
@@ -113,7 +108,7 @@ const ProductList = () => {
 			</div>
 
 		</div>
-	)
+	);
 }
 
 export default ProductList;

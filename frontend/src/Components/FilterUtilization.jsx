@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Utilization = ({crop, setUtilization}) => {
+const FilterUtilization = ({crop, setUtilization}) => {
 
 	console.log(crop);
 
@@ -37,8 +37,8 @@ const Utilization = ({crop, setUtilization}) => {
 				false
 			}
 		</div>
-	)
-};
+	);
+}
 
-export default Utilization;
+export default FilterUtilization;
 

@@ -14,7 +14,7 @@ const Product = (props) => {
 			<div className="bulleted-list"><ul>{props.features.map(feature => <li key={uuidv4()}>{feature}</li>)}</ul></div>
 			<div className="bulleted-list"><ul>{props.benefits.map(benefit => <li key={uuidv4()}>{benefit}</li>)}</ul></div>
 		</div>
-	)
-};
+	);
+}
 
 export default Product;

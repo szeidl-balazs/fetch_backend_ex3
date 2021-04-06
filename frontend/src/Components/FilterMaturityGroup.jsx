@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MaturityGroup = ({crop, setMaturityGroup}) => {
+const FilterMaturityGroup = ({crop, setMaturityGroup}) => {
 
 	return (<div>
 
@@ -42,8 +42,7 @@ const MaturityGroup = ({crop, setMaturityGroup}) => {
 				<label>Éréscsoport</label>
 				<select  onChange={(e)=> {setMaturityGroup(e.target.value)}}>
 					<option value="all">Összes</option>					
-					<option value="korai">korai</option>
-					<option value="közép-korai">közép-korai</option>
+					<option value="korai">korai</option>					
 					<option value="középérésű">középérésű</option>						
 				</select>
 			</div>
@@ -54,7 +53,7 @@ const MaturityGroup = ({crop, setMaturityGroup}) => {
 
 		}		
 		
-	</div>)
-};
+	</div>);
+}
 
-export default MaturityGroup;
+export default FilterMaturityGroup;
