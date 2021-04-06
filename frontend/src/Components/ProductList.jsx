@@ -1,28 +1,33 @@
 import React, {useState, useEffect} from 'react';
 import LoadingMask from './LoadingMask';
 import Product from './Product';
+import FilterCrop from './FilterCrop';
 import FilterUtilization from './FilterUtilization';
 import FilterMaturityGroup from './FilterMaturityGroup';
 import FilterTechnology from './FilterTechnology';
+import FilterFeatures from './FilterFeatures';
 import {v4 as uuidv4} from 'uuid';
 
 
 const ProductList = () => {
 
-	const [products, setProducts] = useState([]);
+	const [productsArr, setProductsArr] = useState([]); //Total fetched array
 	const [isLoaded, setIsLoaded] = useState(false)
 
 	const [crop, setCrop] = useState('all');
 	const [utilization, setUtilization] = useState('all');
 	const [maturityGroup, setMaturityGroup] = useState('all');
 	const [technology, setTechnology] = useState('all');
+	const [trait, setTrait] = useState([]);
+
+	console.log(productsArr);
 
 	useEffect(() => {
 
 		fetch('http://localhost:8000/')
 		.then(response => response.json())
 		.then((data) => {
-			setProducts(data.products);
+			setProductsArr(data.products);
 			setIsLoaded(true);
 		})		
 
@@ -31,7 +36,7 @@ const ProductList = () => {
 	//filtering conditions:
 
 	const selectByCrop = (product) => {
-		return product.crop === crop || crop === "all" ? true : false;
+		return product.crop === crop ? true : crop === "none" ? false : false;
 	}
 
 	const selectByUtilization = (product) => {
@@ -47,40 +52,30 @@ const ProductList = () => {
 		return product.technology === technology || technology === "all" ? true : false;
 	}
 
+	const selectByDroughtTolerance = (product) => {
+		return product.features.join(" ").includes(trait);
+	}
 
-	//filters:
 
-	const filteredProducts = products
+	//filters from productsArr array, product means an object {} in this productsArr:
+
+	const filteredProducts = productsArr
 	.filter((product) => selectByCrop(product))
 	.filter((product) => selectByUtilization(product))
 	.filter((product) => selectByMaturityGroup(product))
-	.filter((product) => selectByTechnology(product));
+	.filter((product) => selectByTechnology(product))
+	.filter((product) => selectByDroughtTolerance(product));
 
 	
 	return (
 		<div className="productTable-cont">
 
-			<div className="filter-container">
-
-				<div className="crop-container">
-					<label>Faj</label>
-					<select  onChange={(e) => {setCrop(e.target.value)}}>
-						<option value="all">Összes</option>
-						<option value="kukorica">kukorica</option>
-						<option value="napraforgó">napraforgó</option>
-						<option value="őszi káposztarepce">őszi káposztarepce</option>
-						<option value="őszi búza">őszi búza</option>
-						<option value="őszi árpa">őszi árpa</option>					
-					</select>
-				</div>				
-					
+			<div className="filter-container">					
+				<FilterCrop setCrop={setCrop}/>
 				<FilterUtilization crop={crop} setUtilization={setUtilization}/>
-
 				<FilterMaturityGroup crop={crop} setMaturityGroup={setMaturityGroup} />
-
 				<FilterTechnology crop={crop} setTechnology={setTechnology}/>
-
-
+				<FilterFeatures setTrait={setTrait}/>
 			</div>
 
 			<div>
