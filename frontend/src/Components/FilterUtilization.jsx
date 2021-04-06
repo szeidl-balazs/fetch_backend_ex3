@@ -6,12 +6,12 @@ const FilterUtilization = ({crop, setUtilization}) => {
 	console.log(crop);
 
 	return (
-		<div>
+		<div className="filter-container">
 
 			{
 				crop === "kukorica" ?
 					<div className="utilization-container">
-						<label>Hasznosítás</label>
+						<label>hasznosítás</label>
 						<select onChange={(e) => {setUtilization(e.target.value)}}>
 							<option value="all">összes</option>
 							<option value="szemes">szemes</option>
@@ -24,7 +24,7 @@ const FilterUtilization = ({crop, setUtilization}) => {
 
 				crop === "napraforgó" ?
 					<div className="utilization-container">
-						<label>Hasznosítás</label>
+						<label>hasznosítás</label>
 						<select>
 							<option value="összes">összes</option>
 							<option value="linolsavas">linolsavas</option>
@@ -37,8 +37,8 @@ const FilterUtilization = ({crop, setUtilization}) => {
 				false
 			}
 		</div>
-	);
-}
+	)
+};
 
 export default FilterUtilization;
 

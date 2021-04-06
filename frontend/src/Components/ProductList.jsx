@@ -5,7 +5,7 @@ import FilterCrop from './FilterCrop';
 import FilterUtilization from './FilterUtilization';
 import FilterMaturityGroup from './FilterMaturityGroup';
 import FilterTechnology from './FilterTechnology';
-import FilterFeatures from './FilterFeatures';
+import FilterByCharacter from './FilterByCharacter';
 import {v4 as uuidv4} from 'uuid';
 
 
@@ -18,7 +18,10 @@ const ProductList = () => {
 	const [utilization, setUtilization] = useState('all');
 	const [maturityGroup, setMaturityGroup] = useState('all');
 	const [technology, setTechnology] = useState('all');
-	const [trait, setTrait] = useState([]);
+	const [drought, setDrought] = useState("");
+	const [yieldStability, setYieldStability] = useState("");
+	const [topYield, setTopYield] = useState("");
+	const [earlySowing, setEarlySowing] = useState("");
 
 	console.log(productsArr);
 
@@ -35,50 +38,63 @@ const ProductList = () => {
 
 	//filtering conditions:
 
-	const selectByCrop = (product) => {
+	const filterByCrop = (product) => {
 		return product.crop === crop ? true : crop === "none" ? false : false;
 	}
 
-	const selectByUtilization = (product) => {
+	const filterByUtilization = (product) => {
 		return product.utilization === utilization || utilization === "all" ? true : false;
 	}
 
 
-	const selectByMaturityGroup = (product) => {
+	const filterByMaturityGroup = (product) => {
 		return product.maturitygroup === maturityGroup || maturityGroup === "all" ? true : false;
 	}
 
-	const selectByTechnology = (product) => {
+	const filterByTechnology = (product) => {
 		return product.technology === technology || technology === "all" ? true : false;
 	}
 
-	const selectByDroughtTolerance = (product) => {
-		return product.features.join(" ").includes(trait);
+	const filterByCharacter = (product, character) => {
+		if (character !== "") {
+			return product.features.join(" ").includes(character) || product.benefits.join(" ").includes(character);
+		} else {
+			return true;
+		}
+		
 	}
 
-
 	//filters from productsArr array, product means an object {} in this productsArr:
-
-	const filteredProducts = productsArr
-	.filter((product) => selectByCrop(product))
-	.filter((product) => selectByUtilization(product))
-	.filter((product) => selectByMaturityGroup(product))
-	.filter((product) => selectByTechnology(product))
-	.filter((product) => selectByDroughtTolerance(product));
+	let filteredProducts = productsArr
+	.filter((product) => filterByCrop(product))
+	.filter((product) => filterByUtilization(product))
+	.filter((product) => filterByMaturityGroup(product))
+	.filter((product) => filterByTechnology(product))
+	.filter((product) => filterByCharacter(product, drought))
+	.filter((product) => filterByCharacter(product, yieldStability))
+	.filter((product) => filterByCharacter(product, topYield))
+	.filter((product) => filterByCharacter(product, earlySowing))
+	;
 
 	
 	return (
 		<div className="productTable-cont">
 
-			<div className="filter-container">					
+			<div className="filter-group-container">					
 				<FilterCrop setCrop={setCrop}/>
 				<FilterUtilization crop={crop} setUtilization={setUtilization}/>
 				<FilterMaturityGroup crop={crop} setMaturityGroup={setMaturityGroup} />
 				<FilterTechnology crop={crop} setTechnology={setTechnology}/>
-				<FilterFeatures setTrait={setTrait}/>
+				<FilterByCharacter 
+					crop={crop}
+					drought={drought} setDrought={setDrought}
+					yieldStability={yieldStability} setYieldStability={setYieldStability}
+					topYield={topYield} setTopYield={setTopYield}
+					earlySowing={earlySowing} setEarlySowing={setEarlySowing}
+				/>
 			</div>
 
-			<div>
+			<div className="product-group-container">
 				{
 					isLoaded 
 					?

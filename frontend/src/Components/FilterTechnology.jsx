@@ -3,13 +3,13 @@ import React from 'react';
 const FilterTechnology = ({crop, setTechnology}) => {
 
 	return (
-		<div>
+		<div className="filter-container">
 
 			{
 				crop === "kukorica" ?
 
 				<div className="technology-container">
-					<label>Technológia</label>
+					<label>technológia</label>
 					<select  onChange={(event) => {setTechnology(event.target.value)}}>
 						<option value="all">összes</option>
 						<option value="HYDRANEO">HYDRANEO</option>
@@ -23,7 +23,7 @@ const FilterTechnology = ({crop, setTechnology}) => {
 				crop === "napraforgó" ?
 
 				<div className="technology-container">
-						<label>Technológia</label>
+						<label>technológia</label>
 						<select onChange={(event) => {setTechnology(event.target.value)}}>
 							<option value="all">összes</option>
 							<option value="hagyományos gyomirtás">hagyományos gyomirtás</option>
@@ -38,7 +38,7 @@ const FilterTechnology = ({crop, setTechnology}) => {
 				crop === "őszi káposztarepce" ?
 
 				<div className="technology-container">
-						<label>Technológia</label>
+						<label>technológia</label>
 						<select onChange={event => setTechnology(event.target.value)}>
 							<option value="all">összes</option>
 							<option value="hagyományos gyomirtás">hagyományos gyomirtás</option>
@@ -53,7 +53,7 @@ const FilterTechnology = ({crop, setTechnology}) => {
 			}
 
 		</div>
-	);
-}
+	)
+};
 
 export default FilterTechnology;

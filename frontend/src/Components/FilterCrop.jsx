@@ -3,9 +3,9 @@ import React from 'react';
 const FilterCrop = ({setCrop}) => {
 
 	return (
-		<div>
+		<div className="filter-container">
 				<div className="crop-container">
-					<label>Faj</label>
+					<label>faj</label>
 					<select  onChange={(event) => {setCrop(event.target.value)}}>
 						<option value="none">Válasszon növénykultúrát!</option>
 						<option value="kukorica">kukorica</option>

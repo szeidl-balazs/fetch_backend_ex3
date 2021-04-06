@@ -1,1 +1,107 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App h1 {
+  margin-top: 20px;
+}
+
+.App .productTable-cont {
+  margin: 10px;
+  padding: 20px;
+}
+
+.App .productTable-cont .filter-group-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.App .productTable-cont .filter-group-container label {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.App .productTable-cont .filter-group-container .filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0;
+}
+
+.App .productTable-cont .filter-group-container .filter-container .character-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+.App .productTable-cont .product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px;
+  padding: 20px;
+  background-color: #e30030;
+  color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: grey 2px 3px;
+          box-shadow: grey 2px 3px;
+}
+
+.App .productTable-cont .product-container .product-name {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.App .productTable-cont .product-container .product-feature {
+  margin: 5px 0;
+}
+
+.App .productTable-cont .product-container ul {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=App.css.map */

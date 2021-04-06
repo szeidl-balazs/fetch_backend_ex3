@@ -2,13 +2,13 @@ import React from 'react';
 
 const FilterMaturityGroup = ({crop, setMaturityGroup}) => {
 
-	return (<div>
+	return (<div className="filter-container">
 
 		{
 			crop === "kukorica" ?
 
 			<div className="maturitygroup-container">
-				<label>Éréscsoport</label>
+				<label>éréscsoport</label>
 				<select  onChange={(e)=> {setMaturityGroup(e.target.value)}}>
 					<option value="all">összes</option>
 					<option value="igen korai">igen korai</option>
@@ -24,7 +24,7 @@ const FilterMaturityGroup = ({crop, setMaturityGroup}) => {
 			crop === "napraforgó" ?
 
 				<div className="maturitygroup-container">
-					<label>Éréscsoport</label>
+					<label>éréscsoport</label>
 					<select  onChange={(e)=> {setMaturityGroup(e.target.value)}}>
 						<option value="all">összes</option>
 						<option value="igen korai">igen korai</option>
@@ -39,7 +39,7 @@ const FilterMaturityGroup = ({crop, setMaturityGroup}) => {
 			crop === "őszi káposztarepce" ?
 
 			<div className="maturitygroup-container">
-				<label>Éréscsoport</label>
+				<label>éréscsoport</label>
 				<select  onChange={(e)=> {setMaturityGroup(e.target.value)}}>
 					<option value="all">összes</option>					
 					<option value="korai">korai</option>					
@@ -53,7 +53,7 @@ const FilterMaturityGroup = ({crop, setMaturityGroup}) => {
 
 		}		
 		
-	</div>);
-}
+	</div>)
+};
 
 export default FilterMaturityGroup;
