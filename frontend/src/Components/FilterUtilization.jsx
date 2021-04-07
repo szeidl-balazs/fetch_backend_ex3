@@ -25,7 +25,7 @@ const FilterUtilization = ({crop, setUtilization}) => {
 				crop === "napraforgó" ?
 					<div className="utilization-container">
 						<label>hasznosítás</label>
-						<select>
+						<select onChange={(e) => {setUtilization(e.target.value)}}>
 							<option value="összes">összes</option>
 							<option value="linolsavas">linolsavas</option>
 							<option value="magas olajsavas">magas olajsavas</option>

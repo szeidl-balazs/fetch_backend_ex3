@@ -81,28 +81,155 @@
 		{
 			"crop": "kukorica",
 			"brand": "LG",
-			"name": "",
+			"name": "LG 30.389 ",
 			"utilization": "szemes",
-			"fao": "",
-			"maturitygroup": "",
+			"fao": "390",
+			"maturitygroup": "közép-korai",
 			"technology": "",
-			"features": ["", ""],
-			"benefits": ["", ""]
+			"features": ["kiváló kezdeti fejlődés", "nagyon gyors vízleadás", "nagyon jó cső egészség"],
+			"benefits": ["átlagos illetve jobb adottságú területeken gazdálkodóknak,", "közepes vagy enyhe szárazság stressz esetén."]
 		},
 		{
 			"crop": "kukorica",
 			"brand": "LG",
-			"name": "",
+			"name": "LG 30.500",
 			"utilization": "szemes",
+			"fao": "500",
+			"maturitygroup": "középérésű",
+			"technology": "HYDRANEO",
+			"features": ["nagyon jó termőképesség", "jó stressztűrés", "kiváló csőegészség", "kiváló szárszilárdság"],
+			"benefits": ["Azoknak ajánljuk, akik szeretnék kihasználni a hosszabb tenyészidőben rejlő nagyobb terméspotenciál lehetőségét", "Kedvező termőhelyi adottságokkal rendelkező területen, még ha kisebb mértékű szárazság előfordul is, hozza az elvárt termést."]
+		},
+
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.322",
+			"utilization": "szemes",
+			"fao": "320",
+			"maturitygroup": "korai",
+			"technology": "HYDRANEO",
+			"features": ["nagyon jó termőképesség", "jó termésstabilitás", "nagyon jó szárazságtűrés", "nagyon jó cső egészség"],
+			"benefits": ["Ha rövid tenyészidejű, jó alkalmazkodóképességű hibridre van szüksége", "Ugyanakkor, kedvező körülmények esetén nem akar lemondani a nagyobb termés lehetőségéről sem"]
+		},
+
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 32.58 ",
+			"utilization": "szemes",
+			"fao": "",
+			"maturitygroup": "igen korai",
+			"technology": "",
+			"features": ["gyors kezdeti fejlődés", "jó alkalmazkodóképesség", "jó szárazságtűrés", "stabil, szilárd szár"],
+			"benefits": ["megkésett vetéshez", "korán lekerülő elővetemény után másodvetésre alkalmas hibridet keresnek"]
+		},
+
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 30.315",
+			"utilization": "szemes",
+			"fao": "310",
+			"maturitygroup": "korai",
+			"technology": "",
+			"features": ["gyors kezdeti fejlődés", "korai virágzás", "korai érés", "nagyon jó termőképesség"],
+			"benefits": ["átlagos, vagy kissé gyengébb adottságú területeikre korán aratható hibridet keresnek", "a korai betakarítás előnyeit kihasználva nem akarnak lemondani a nagy termésről sem"]
+		},
+
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LZM367/38 (Dolbey)",
+			"utilization": "szemes",
+			"fao": "",
+			"maturitygroup": "közép-korai",
+			"technology": "",
+			"features": ["korai vetés", "jó kezdeti fejlődési erély", "jó szárazság tűrés", "jó szár és cső egészség"],
+			"benefits": ["kedvező ár", "átlagos adottságú területekre ajánljuk"]
+		},
+
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.401",
+			"utilization": "szemes",
+			"fao": "400",
+			"maturitygroup": "közép-korai",
+			"technology": "",
+			"features": ["korai vetésre is alkalmas", "jó Kezdeti fejlődési erély", "nagyon jó termőképesség", "kiváló szár és cső egészség" ],
+			"benefits": ["bőségesen megtérül, ha kiszolgálják az igényeit", "intenzív termesztést folytató gazdálkodóknak, illetve jó termőhelyi adottságok közé ajánljuk"]
+		},
+
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "LG 31.558",
+			"utilization": "siló",
+			"fao": "550",
+			"maturitygroup": "kései",
+			"technology": "",
+			"features": ["kiváló   zöld-   és   szárazanyag   termés", "lassú  felszáradás", "kiváló cső egészség", "kiváló emészthető rost arány", "nagy energiatartalom" ],
+			"benefits": ["nagy zöldtermés", "jó szárazságtűrés", "kiváló beltartalmi értékek"]
+		},
+		
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "SHANNON",
+			"utilization": "siló",
+			"fao": "450",
+			"maturitygroup": "középérésű",
+			"technology": "",
+			"features": ["nagy tömegű levélzet", "ó  csőarány", "kiválóan  emészthető", "energia  dús  szilázs  készítését teszi lehetővé" ],
+			"benefits": ["korai silózáshoz", " gabona  szenázs  utáni  vetéshez"]
+		},
+		
+		{
+			"crop": "kukorica",
+			"brand": "LG",
+			"name": "",
+			"utilization": "siló",
 			"fao": "",
 			"maturitygroup": "",
 			"technology": "",
-			"features": ["", ""],
+			"features": ["", "", "", "" ],
 			"benefits": ["", ""]
+		},		
+
+
+		{
+			"crop": "napraforgó",
+			"brand": "LG",
+			"name": "LG 54.78",
+			"utilization": "linolsavas",			
+			"maturitygroup": "korai",
+			"technology": "hagyományos gyomirtás",
+			"features": ["nagyon jó alkalmazkodóképesség", "jó betegség-ellenállóság", "korai érés", "magas olajtartalom" ],
+			"benefits": ["akik a nem gyomirtó szer rezisztens hibridek termelését részesítik előnyben", "az agrotechnikai, illetve kémiai növényvédelem mellett fontos a hibrid ellenállóképessége is", "deszikkálás nélkül kívánják megoldani a betakarítást"]
+		},
+
+		{
+			"crop": "napraforgó",
+			"brand": "LG",
+			"name": "LG 54.92 HO CL",
+			"utilization": "magas olajsavas",		
+			"maturitygroup": "közép-korai",
+			"technology": "Clearfield gyomirtás",
+			"features": ["magas és stabil olajsavtartalom", " ● jó  alkalmazkodóképessé", "erős, középmagas szár", "● kiváló  betegség-ellenállósá", "széles spektrumú peronoszpóra és szádor rezisztencia"],
+			"benefits": ["akik  termőhelytől  és  évjáratokól  füg-getlenül stabilan teljesítő HO hibridet keresnek", "a termény értékesítés során az olajsav prémiumot is realizálni kívánják"]
+		},
+
+		{
+			"crop": "napraforgó",
+			"brand": "LG",
+			"name": "",
+			"utilization": "",		
+			"maturitygroup": "",
+			"technology": "",
+			"features": ["", "", "", "" ],
+			"benefits": ["", "", ""]
 		}
-
-
-
 
 
 	]
